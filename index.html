@@ -6,46 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ideal Education</title>
     <link rel="icon" href="./img/logo.PNG">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
 </head>
 
 <body>
     <div class="container">
-        <header>
+        <header data-aos="fade-down">
             <img src="./img/logo.PNG" alt="">
-            <h1>Ideal Education</h1>
-            <p> <strong>Ideal Education</strong> — zamonaviy bilim va amaliy ko‘nikmalarni o‘rgatishga ixtisoslashgan
+            <h1 data-aos="zoom-in">Ideal Education</h1>
+            <p data-aos="fade-up">
+                <strong>Ideal Education</strong> — zamonaviy bilim va amaliy ko‘nikmalarni o‘rgatishga ixtisoslashgan
                 o‘quv markazi.
                 Markazimizda IT yo‘nalishlari, dasturlash va raqamli texnologiyalar bo‘yicha sifatli ta’lim beriladi.
             </p>
         </header>
 
-        <section class="video-section">
+        <section class="video-section" data-aos="fade-up">
             <div class="video-placeholder">
-                <video src="./video/videoplayback.mp4" controls autoplay loop></video>
+                <video src="./video/videoplayback.mp4" controls autoplay muted loop></video>
             </div>
         </section>
 
-        <section class="contacts">
+        <section class="contacts" data-aos="fade-up">
             <h2>Biz bilan bog'laning</h2>
             <div class="contact-buttons">
-                <a href="https://t.me/ideal_edu_uz" class="contact-btn">
+                <a href="https://t.me/ideal_edu_uz" class="contact-btn tg" data-aos="fade-right">
                     <img src="./img/tg.webp" alt="">
                 </a>
-                <a href="tel:+998974888844" class="contact-btn">
+                <a href="tel:+998974888844" class="contact-btn phone" data-aos="zoom-in">
                     <img src="./img/pho.png" alt="">
                 </a>
                 <a href="https://www.instagram.com/ideal.education.uz?igsh=MTFuMnd6Y3RkcjVvMg%3D%3D"
-                    class="contact-btn">
+                    class="contact-btn insta" data-aos="fade-left">
                     <img src="./img/Instagram.png" alt="">
                 </a>
             </div>
         </section>
 
-        <footer>
+        <footer data-aos="fade-up">
             © 2026 Ideal Education
         </footer>
+
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
 </body>
 
 </html>
