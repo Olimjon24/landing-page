@@ -52,7 +52,7 @@
         font-size: 14px;
     }
     .video-placeholder video{
-        /* max-width: 340px; */
+        max-width: 340px;
         height: 400px;
         width: 100%;
         border-radius: 20px;
